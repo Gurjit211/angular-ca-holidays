@@ -1,59 +1,57 @@
-# NgClient
+Project: NgClient — Angular CA Holidays
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.4.
+Student ID: N01634963
 
-## Development server
+Course: ITE 5425 — Web Programming and Framework 2
 
-To start a local development server, run:
+Overview: Angular 20 app with navigation, API data, and a reactive feedback form. Localized to Canadian English (en-CA). Deployed on Vercel.
 
-```bash
-ng serve
-```
+Pages:
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Home — shows the next few Canadian public holidays.
 
-## Code scaffolding
+API Data — full list of holidays for the current year.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Form — feedback form with validation.
 
-```bash
-ng generate component component-name
-```
+Features:
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Client-side routing (Home, API Data, Form).
 
-```bash
-ng generate --help
-```
+API service using HttpClient (Nager.Date public holidays for Canada).
 
-## Building
+Reactive form with inline error messages.
 
-To build the project run:
+Clean, readable design (SCSS, larger base font).
 
-```bash
-ng build
-```
+App locale set to en-CA for dates and text.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+Form validation:
 
-## Running unit tests
+Name: required, minimum 2 characters.
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+Email: required, valid email.
 
-```bash
-ng test
-```
+Message: required, minimum 10 characters.
 
-## Running end-to-end tests
+Agree checkbox: required.
 
-For end-to-end (e2e) testing, run:
+Note: feedback is not stored (by design).
 
-```bash
-ng e2e
-```
+Tech stack: Angular 20, Router, HttpClient, Reactive Forms, SCSS, Vercel.
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+API used: Nager.Date — Canadian public holidays (/PublicHolidays/{year}/CA).
 
-## Additional Resources
+Deployment: Vercel (single-page app rewrite enabled). Add your live URL here.
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Assignment checklist:
+
+✅ Routing with three pages
+
+✅ API consumption via Angular service + HttpClient
+
+✅ Reactive form with validation
+
+✅ Deployed publicly
+
+✅ README included
