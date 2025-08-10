@@ -1,3 +1,6 @@
+
+# Link --> "https://my-angular-assignment.vercel.app/home"
+
 Project: NgClient — Angular CA Holidays
 
 Student ID: N01634963
@@ -55,3 +58,5 @@ Assignment checklist:
 ✅ Deployed publicly
 
 ✅ README included
+
+
