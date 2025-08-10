@@ -1,0 +1,19 @@
+.form { max-width: 640px; }
+.field { display: flex; flex-direction: column; gap: .4rem; margin-bottom: 1rem; }
+label { font-weight: 600; }
+input, textarea {
+  font-size: 1rem; padding: .65rem .8rem;
+  border: 1px solid var(--border); border-radius: .6rem; outline: none;
+}
+input:focus, textarea:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(37,99,235,.15);
+}
+.checkbox { display: flex; align-items: center; gap: .5rem; margin: .5rem 0 1rem; }
+button {
+  font-size: 1rem; padding: .65rem 1rem; border-radius: .6rem;
+  border: 1px solid var(--accent); background: var(--accent); color: #fff; cursor: pointer;
+}
+button[disabled] { opacity: .6; cursor: not-allowed; }
+.error { color: #b91c1c; }
+.success { border-color: #34d399; }
