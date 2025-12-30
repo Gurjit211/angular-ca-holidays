@@ -1,0 +1,23 @@
+<h1>Canadian Public Holidays ({{ currentYear }})</h1>
+
+<p class="small">All dates displayed in Canadian English (en-CA).</p>
+
+<div class="holiday-container" *ngIf="holidays$ | async as holidays; else loading">
+  
+  <article *ngFor="let h of holidays" class="card">
+    <div class="card-content">
+      <h3>{{ h.name }}</h3>
+      <p class="details">
+        <strong>{{ h.date | date:'EEEE, d MMM yyyy' }}</strong> · {{ h.localName }}
+      </p>
+    </div>
+  </article>
+
+  <p *ngIf="holidays.length === 0">No holidays found for {{ currentYear }}.</p>
+</div>
+
+<ng-template #loading>
+  <div class="loader">
+    <p>Loading holidays for {{ currentYear }}...</p>
+  </div>
+</ng-template>
